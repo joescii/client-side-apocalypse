@@ -450,6 +450,16 @@ a:focus {
   -ms-transform: rotate(-115deg);
   -o-transform: rotate(-115deg);
   transform: rotate(-115deg);
+  opacity: 0.4;
+}
+
+.right-arrow img {
+  -webkit-transform: rotate(115deg);
+  -moz-transform: rotate(115deg);
+  -ms-transform: rotate(115deg);
+  -o-transform: rotate(115deg);
+  transform: rotate(115deg);
+  opacity: 0.4;
 }
 
 .centered {
@@ -508,7 +518,7 @@ img.centered {
 
 .hljs-comment {
     font-style: italic;
-    color: darkgray;
+    color: dimgray;
 }
 
 .hljs-inheritance {
