@@ -432,16 +432,31 @@ a:focus {
     margin-bottom: 120px;
 }
 
-#links {
-    background-image: url("/images/last-supper-lego.jpg");
-    background-size: 100%;
-    color: whitesmoke;
-    text-shadow: 2px 2px 2px #1F1F1F;
+#wikipedia h1 {
+    font-size: 60px;
+    float: right;
 }
 
-#up-arrow img {
-    transform:scale(4,3);
-    transform-origin:0 0;
+.browser-view {
+    background-image: url("/images/firefox.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+}
+
+.left-arrow img {
+  -webkit-transform: rotate(-115deg);
+  -moz-transform: rotate(-115deg);
+  -ms-transform: rotate(-115deg);
+  -o-transform: rotate(-115deg);
+  transform: rotate(-115deg);
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .future .appear {
@@ -458,14 +473,6 @@ a:focus {
     opacity: 0;
 }
 
-.strikethru {
-    text-decoration: line-through;
-}
-
-.red {
-    color: red;
-}
-
 img.centered {
     display: block;
     margin-left: auto;
@@ -475,15 +482,6 @@ img.centered {
 .bulleted li {
     list-style: circle;
     margin-left: 50px;
-}
-
-.false {
-    color: red;
-    font-size: 96px;
-}
-
-.olde {
-    font-family: "Old English Text MT";
 }
 
 .code {
