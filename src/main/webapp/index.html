@@ -33,6 +33,7 @@
   <div id="title" class="step">
     <h1>The Client-Side Apocalypse</h1>
     <h2>Joe Barnes</h2>
+    <h2>@joescii</h2>
     <h3 id="follow">Follow along at http://<span data-lift="Host">localhost</span></h3>
     <div>Powered by</div>
     <img src="images/liftweb-logo-single-small2.png">
@@ -57,6 +58,8 @@
     <div><i>-wikipedia</i></div>
   </div>
 
+
+  <!-- Three round-trips -->
   <div id="what-happens" class="step" data-x="-2000" data-y="-2000">
     So what happens when we render client-side?
   </div>
@@ -64,6 +67,8 @@
   <div id="initial-request" class="step browser-view" data-x="-4000" data-y="-2000">
   </div>
 
+
+  <!-- Get HTML -->
   <div class="visible left-arrow" data-x="-5250" data-y="-1500" data-z="-500">
     <img src="images/arrow.png">
   </div>
@@ -87,6 +92,8 @@
   <div id="first-response" class="step browser-view" data-x="-4000">
   </div>
 
+
+  <!-- Get javascript -->
   <div class="visible left-arrow" data-x="-5250" data-y="500" data-z="-500">
     <img src="images/arrow.png">
   </div>
@@ -109,6 +116,131 @@
 
   <div id="second-response" class="step browser-view" data-x="-4000" data-y="2000">
   </div>
+
+
+  <!-- Get AJAX stuff -->
+  <div class="visible left-arrow" data-x="-5250" data-y="2500" data-z="-500">
+    <img src="images/arrow.png">
+  </div>
+
+  <div id="ajax-request" class="step" data-x="-5500" data-y="2500">
+    <div class="centered">actual-important-crap</div>
+  </div>
+
+  <div id="ajax-request-received" class="step" data-x="-7000" data-y="3000">
+    <img class="centered" src="images/cloud-server.png">
+  </div>
+
+  <div class="visible right-arrow" data-x="-5250" data-y="3500" data-z="-500">
+    <img src="images/arrow.png">
+  </div>
+
+  <div id="ajax-response" class="step" data-x="-5500" data-y="3500">
+    <div class="centered" data-lift="Code?src=/webapp/js/crap.json"></div>
+  </div>
+
+  <div id="third-response" class="step browser-crap-view" data-x="-4000" data-y="4000">
+  </div>
+
+
+
+  <!-- Spinner -->
+  <div id="keep-em-entertained" class="step" data-x="-5500" data-y="5000">
+    <div>Keep 'em entertained with a spinner!</div>
+    <div>(Don't mention we had to fetch it too)</div>
+  </div>
+
+  <div id="sbtb" class="step img-only" data-x="-4000" data-y="5000">
+    <img src="images/sbtb.png">
+  </div>
+
+  <!-- Fast and reliable -->
+  <div id="no-big-deal" class="step" data-x="-2500" data-y="5000">
+    No big deal, it's 2016 and the internet is fast and reliable
+  </div>
+
+  <div id="mbps-and-fiber" class="step centered internet-imgs" data-x="-1000" data-y="5000">
+    <div>2016 internet</div>
+    <img src="images/cloud-server.png">
+    <img src="images/google-fiber.jpg">
+    <img src="images/mbp.jpg">
+  </div>
+
+  <div id="real-internet" class="step centered internet-imgs" data-x="500" data-y="5000">
+    <div>Somewhere IRL, probably</div>
+    <img src="images/cloud-server.png">
+    <img src="images/wiring.jpg">
+    <img src="images/blackberry.png">
+  </div>
+
+  <div id="inflight-wifi" class="step centered internet-imgs" data-x="500" data-y="4000">
+    <div>True story</div>
+    <img src="images/cloud-server.png">
+    <img src="images/inflight-wifi.jpg">
+    <img src="images/mbp.jpg">
+  </div>
+
+
+  <!-- Complexity -->
+  <div id="even-if" class="step" data-x="2000" data-y="4000">
+    Even if the internet WAS always fast and reliable...
+  </div>
+
+  <div id="complexity" class="step img-only centered" data-x="3500" data-y="4000">
+    <img src="images/complexity.png">
+  </div>
+
+  <div id="js-love" class="step" data-x="3500" data-y="5000">
+    Who here loves JS???
+  </div>
+
+  <div id="scala-js" class="step img-only centered" data-x="3500" data-y="5500" data-z="500">
+    <div>NO ONE!!!</div>
+    <img src="images/scala-js.png">
+  </div>
+
+  <div id="transpiling" class="step" data-x="3500" data-y="6500">
+    <ul class="bulleted">
+      <li>Transpilation => Bloated JS payload</li>
+      <li>Not a compiled langauge</li>
+      <li>Transmitted and distributed globally</li>
+      <li>To inefficient devices producing heat</li>
+    </ul>
+  </div>
+
+  <div id="global-warming" class="step img-only centered" data-x="2000" data-y="6000">
+    <div>Global warming...</div>
+    <img src="images/global-warming.jpg">
+    <div>...and it is YOUR fault</div>
+  </div>
+
+
+  <!-- Progressive enhancement -->
+  <div id="seriously-tho" class="step" data-x="500" data-y="6000">
+    <div>Jokes aside, lots of opportunities for failure</div>
+    <div>What if any of those round-trips fail?</div>
+  </div>
+
+  <div id="progressive-enhancement" class="step" data-x="500" data-y="8000">
+    <div>Progressive enhancement</div>
+    <ul class="bulleted">
+      <li>The page *just works*</li>
+      <li>If other capabilities are available, it works better</li>
+    </ul>
+  </div>
+
+  <div id="did-you-know1" class="step" data-x="-1000" data-y="8000">
+    <div>Did you know...</div>
+    <div>a browser can redirect without javascript?</div>
+    <div>See <span class="code">&lt;a href="(url)"&gt;</span></div>
+  </div>
+
+  <div id="did-you-know2" class="step" data-x="-1000" data-y="6000">
+    <div>Did you know...</div>
+    <div>a browser can send data without javascript?</div>
+    <div>See <span class="code">&lt;form&gt;</span></div>
+  </div>
+
 
 </div>
 

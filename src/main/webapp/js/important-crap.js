@@ -9,6 +9,6 @@ function loadContent() {
     }
   };
 
-  xmlhttp.open("GET", "important-crap.txt", true);
+  xmlhttp.open("GET", "actual-important-crap", true);
   xmlhttp.send();
 }

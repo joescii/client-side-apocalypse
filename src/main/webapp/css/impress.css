@@ -444,6 +444,13 @@ a:focus {
     height: 600px;
 }
 
+.browser-crap-view {
+    background-image: url("/images/firefox-with-crap.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+}
+
 .left-arrow img {
   -webkit-transform: rotate(-115deg);
   -moz-transform: rotate(-115deg);
@@ -460,6 +467,14 @@ a:focus {
   -o-transform: rotate(115deg);
   transform: rotate(115deg);
   opacity: 0.4;
+}
+
+.internet-imgs img {
+    width: 300px;
+}
+
+.img-only {
+    height: 600px;
 }
 
 .centered {
