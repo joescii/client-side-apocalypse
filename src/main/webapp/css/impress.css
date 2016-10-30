@@ -437,6 +437,10 @@ a:focus {
     float: right;
 }
 
+#credits {
+    font-size: 18px;
+}
+
 .browser-view {
     background-image: url("/images/firefox.jpg");
     background-repeat: no-repeat;
