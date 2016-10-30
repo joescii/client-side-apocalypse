@@ -1,3 +1,4 @@
-# client-side-apocalypse
+# Client-Side Apocalypse
 
-My Presentera project
+It's a presentation.
+
