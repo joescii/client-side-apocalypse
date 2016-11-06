@@ -357,21 +357,28 @@
     It turns out we can write such apps and enjoy writing them
   </div>
 
-  <div id="hotness" class="step" data-x="-13500" data-y="5000">
-    <div>Remember when this was the hotness?</div>
-    <img src="images/liftweb-logo-single-small2.png">
+  <div id="review" class="step" data-x="-13500" data-y="5000">
+    Review of problems:
+    <ul class="bulleted">
+      <li>Multiple round trips, app can fail</li>
+      <li>Be slow to render when not failing</li>
+      <li>Creates state to synchronize</li>
+      <li>Can confuse users, eroding trust</li>
+    </ul>
   </div>
 
   <div id="features" class="step" data-x="-13500" data-y="4000">
-    <div>With Lift you can</div>
+    <div>Lift avoids these problems</div>
     <ul class="bulleted">
       <li>render fully-functional HTML from the server</li>
       <li>progressively enhance it with JS/CSS</li>
+      <li>state belongs safely on the server, not on an uncontrolled client</li>
+      <li>updates easily applied <i>after</i> round trip to server</li>
     </ul>
   </div>
 
   <div id="client-updates" class="step" data-x="-11000" data-y="5000">
-    <div>But client updates were never fun</div>
+    <div>But client updates were never fun in Lift...</div>
   </div>
 
   <div id="on-your-own" class="step" data-x="-11000" data-y="6000">
@@ -390,6 +397,11 @@
 
   <div id="vdom" class="step img-only centered" data-x="-15000" data-y="6000">
     <img src="images/sponge-bob.jpg">
+  </div>
+
+  <div id="dom-manip" class="step" data-x="-16500" data-y="6000">
+    <div>Most Lift DOM manipulation is to reflect state changes on the server</div>
+    <div>Why not do this automagically?</div>
   </div>
 
   <div id="react" class="step" data-x="-15000" data-y="7000">
