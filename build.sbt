@@ -44,7 +44,7 @@ packageArchetype.java_application
 bashScriptConfigLocation := Some("${app_home}/../conf/jvmopts")
 
 initialize~= { _ =>
-  System.setProperty("webdriver.chrome.driver", "src/it/drivers/chromedriver.exe")
+  System.setProperty("webdriver.chrome.driver", "src/it/drivers/chromedriver")
 }
 
 (Keys.test in IntegrationTest) <<= (Keys.test in IntegrationTest) dependsOn (start in container.Configuration)
