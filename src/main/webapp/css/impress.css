@@ -432,6 +432,10 @@ a:focus {
     margin-bottom: 120px;
 }
 
+.aol-platforms {
+  width: 50%;
+}
+
 #wikipedia h1 {
     font-size: 60px;
     float: right;
